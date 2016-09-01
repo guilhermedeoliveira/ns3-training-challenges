@@ -1,0 +1,10 @@
+set terminal post eps color enhanced
+set output "rate-adaptation.eps"
+set title "Throughput STA vs distancia"
+set xlabel "distancia (metros)"
+set ylabel "Throughput (Mb/s)"
+plot "./throughput-minstrel.plt" using 1:2 ls 1 title "minstrel" with lines, \
+     "./throughput-aarf.plt" using 1:2 ls 2 title "aarf" with lines, \
+     "./throughput-onoe.plt" using 1:2 ls 3 title "onoe" with line, \
+     "./throughput-cara.plt" using 1:2 ls 4 title "cara" with lines, \
+     "./throughput-rraa.plt" using 1:2 ls 5 title "rraa" with lines

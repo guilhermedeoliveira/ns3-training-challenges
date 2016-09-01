@@ -1,0 +1,8 @@
+set terminal post eps color enhanced
+set output "SixthChallenge.eps"
+set title "Sixth Challenge"
+set xlabel "Position x (metros)"
+set ylabel "Position y (metros)"
+plot "./SixthChallenge.plt" using 2:(stringcolumn(1) eq "5"? column(3):1/0) title "N5" lc rgb "red" ,\
+  "" using 2:(stringcolumn(1) eq "6"? column(3):1/0) title "N6" lc rgb "green" ,\
+  "" using 2:(stringcolumn(1) eq "7"? column(3):1/0) title "N7" lc rgb "blue"
