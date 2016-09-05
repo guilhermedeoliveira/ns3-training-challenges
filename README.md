@@ -109,7 +109,7 @@ So here final challenge goes:
 
 * Change the mobility model position allocator to "RandomDiscPositionAllocator" with the following attributes:
  * Disk center coordinate (20,20);
- * Disk radius must vary between 0 to 20;
+ * Disk radius must vary between 0 to 20.
 * Change the attributes of the mobility model as follows:
  * Time is the conditioner "mode" of speed and direction changes and it must be = 1s;
  * Model speed must be "UniformRandomVariable" and vary between 1 to 1.8 m/s;
@@ -117,6 +117,7 @@ So here final challenge goes:
  * The bounds must vary between 0 to 50 (x and y).
 
 To change method allocator position and mobility model, you may use as reference the documentation "https://www.nsnam.org/doxygen/main-random-walk_8cc_source.html"
+
 1. Plot the positions of STAs;
 2. Visualize the movement of STAS via NetAnim;
 3. Compare the modified scenario with default.
