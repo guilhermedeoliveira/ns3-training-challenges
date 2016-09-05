@@ -77,8 +77,8 @@ Go to examples/wireless directory and open rate-adaptation-distance.cc:
 
 * Make a graph throughput vs. distance for the following rate adaptation algorithms:
  * Minstrel, Aarf, Onoe, CARA and RRAA;
-* Compare performances;
- * Remember that the classes representing each algorithms belong to the namespace ns3.
+* Compare performances:
+ * Remember that the classes representing each algorithms belong to the namespace ns3;
 
 You should create a script to automate the task.
 
@@ -97,7 +97,8 @@ NS_LOG_UNCOND (context << ​
 }
 
 * To get information about mobility model position, we will add some code. This peace of code will track each time when echo client switch position (do this using Config::Connect function). Add the following code before run simulator:
-​
+​"
+
 std::ostringstream oss; ​
 oss << ​
 "/NodeList/" << wifiStaNodes.Get (nWifi - 1)->GetId () << ​
@@ -115,8 +116,7 @@ So here final challenge goes:
  * Add a direction attribute ranging from 0 to 20 radians;
  * The bounds must vary between 0 to 50 (x and y).
 
-To change method allocator position and mobility model, you may use as reference the documentation "https://www.nsnam.org/doxygen/main-random-walk_8cc_source.html";
-
-Plot the positions of STAs;
-Visualize the movement of STAS via NetAnim;
-Compare the modified scenario with default.
+To change method allocator position and mobility model, you may use as reference the documentation "https://www.nsnam.org/doxygen/main-random-walk_8cc_source.html"
+1. Plot the positions of STAs;
+2. Visualize the movement of STAS via NetAnim;
+3. Compare the modified scenario with default.
